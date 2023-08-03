@@ -255,3 +255,7 @@ body{
     width: 100%;
     text-align: center;
 }
+a:is(.link):hover{
+        cursor: pointer;
+        transform: scale(1.02);
+}
