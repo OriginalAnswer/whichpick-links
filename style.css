@@ -41,7 +41,7 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
 
-    background-image: url(../background.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
     backdrop-filter: var(--body-blur);
 }
@@ -112,14 +112,14 @@ body{
 .container{
     position: relative;
 
-    background-image: url(./background.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
     backdrop-filter: var(--body-blur);
     .cover{
         position: relative;
         width: 100%;
         height: var(--cover-height);
-        background-image: url(../cover.jpeg);
+        background-image: url(cover.jpeg);
         background-size: cover;
         background-position: center;
         
