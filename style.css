@@ -115,7 +115,7 @@ body{
         position: relative;
         width: 100%;
         height: var(--cover-height);
-        background-image: url(/cover.jpeg);
+        background-image: url(./cover.jpeg);
         background-size: cover;
         background-position: center;
         
