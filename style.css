@@ -38,8 +38,7 @@ body{
     width: 100%;
     height: 100vh;
     height: 100dvh;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
 
     background-image: url(background.jpg);
     background-size: cover;
@@ -101,11 +100,10 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     & .container{
         width: 100%;
         max-width: 450px;
-        height: 100vh;
-        /* border-radius: var(--border-radius-30); */
         @media (max-width: 500px) {
             &{max-width: 100%;}
         }
@@ -113,7 +111,7 @@ body{
 }
 .container{
     position: relative;
-
+    overflow: scroll;
     background-image: url(background.jpg); 
     background-size: cover;
     backdrop-filter: var(--body-blur);
@@ -131,6 +129,9 @@ body{
     & main{
         position: relative;
         top:-38px;
+        height: 100%;
+
+
         background-color: var(--main-backgroundColor);
         border: var(--border1);
         padding: 10px 3px;
