@@ -44,6 +44,8 @@ body{
     background-image: url(background.jpg);
     background-size: cover;
     backdrop-filter: var(--body-blur);
+    -webkit-backdrop-filter: var(--body-blur);
+
 }
 .notice-warpper{
     position: fixed;
@@ -115,6 +117,8 @@ body{
     background-image: url(background.jpg);
     background-size: cover;
     backdrop-filter: var(--body-blur);
+    -webkit-backdrop-filter: var(--body-blur);
+
     .cover{
         position: relative;
         width: 100%;
@@ -132,6 +136,7 @@ body{
         padding: 10px 3px;
         border-radius: var(--border-radius-30);
         backdrop-filter: var(--body-blur);
+        -webkit-backdrop-filter: var(--body-blur);
         /* @media (max-width: 500px) {
             &{padding: 0 5px;}
         } */
