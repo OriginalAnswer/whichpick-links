@@ -114,7 +114,7 @@ body{
 .container{
     position: relative;
 
-    background-image: url(background.jpg);
+    background-image: url(background.jpg); 
     background-size: cover;
     backdrop-filter: var(--body-blur);
     -webkit-backdrop-filter: var(--body-blur);
