@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap');
 @import url(./default.css);
 :root{
     --fontColr:#000;
@@ -44,6 +45,7 @@ body{
     background-size: cover;
     backdrop-filter: var(--body-blur);
     -webkit-backdrop-filter: var(--body-blur);
+    font-family: 'Gowun Dodum',sans-serif ,serif;
 
 }
 .notice-warpper{
@@ -134,7 +136,7 @@ body{
 
         background-color: var(--main-backgroundColor);
         border: var(--border1);
-        padding: 10px 3px;
+        padding: 5px 3px;
         border-radius: var(--border-radius-30);
         backdrop-filter: var(--body-blur);
         -webkit-backdrop-filter: var(--body-blur);
@@ -151,19 +153,21 @@ body{
             gap: 10px;
             
             width: 100%;
-            height: var(--nav-height);
+            min-height: var(--nav-height);
             /* border: 1px rgb(220, 220, 220) solid;
             box-shadow: 0 5px 10px 0 rgba(203, 203, 203, 0.283);    background-color: var(--search-bgclr);
             border-radius: var(--border-radius-30); */
             padding: 5px;
             margin-bottom: var(--margin-gap);
-            & span {
-                padding: 15px;
-                font-size: .9em;
+            & .main-noti-icon {
+                padding: 15px 0px 15px 15px;
             }
-            & .noti{
-                font-size: 12px;
-                padding: 0 10px;
+            & .main-noti{
+                /* width: calc(100% - 144px - 30px); */
+                width: 100%;
+                /* padding-right: 5px; */
+                font-size: .8em;
+                /* font-style: italic; */
             }
             & a{
                 display: flex;
@@ -172,6 +176,7 @@ body{
                 gap: 10px;
                 
                 flex-basis: 114px;
+                min-width: 114px;
                 height: var(--offer-height);
                 padding: 10px 10px;
                 border-radius: var(--border-radius-30);
@@ -195,7 +200,6 @@ body{
             align-items: center;
             flex-wrap: nowrap;
 
-            gap: 10px;
             
             border: 1px rgb(220, 220, 220) solid;
             box-shadow: 0 5px 10px 0 rgba(203, 203, 203, 0.283);    background-color: var(--search-bgclr);
@@ -204,12 +208,11 @@ body{
             & .search-icon{
                 padding: 15px;
             }
-            & input[type=text]{
+            & #input-search{
                 height: var(--search-height);
-                /* width: 100%; */
-                margin-right: auto;
-                padding: 0 10px;
-                font-size: var(--search-fontSize);
+                width: calc(100% - 144px - 30px);
+                padding-right: 5px;
+                /* font-size: var(--search-fontSize); */
                 color: var(--fontColr);
             }
             & .offer{
