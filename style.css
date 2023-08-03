@@ -10,7 +10,7 @@
 
     --body-blur:blur(40px);
 
-    --main-backgroundColor:#ffffff;
+    --main-backgroundColor:#fffffff5;
     --cover-height:280px;
     
     --nav-height:calc(var(--search-height) + 10px);
@@ -41,9 +41,9 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
 
-    /* background-image: url(./background.jpg);
+    background-image: url(./background.jpg);
     background-size: cover;
-    backdrop-filter: var(--body-blur); */
+    backdrop-filter: var(--body-blur);
 }
 .notice-warpper{
     position: fixed;
@@ -111,6 +111,10 @@ body{
 }
 .container{
     position: relative;
+
+    background-image: url(./background.jpg);
+    background-size: cover;
+    backdrop-filter: var(--body-blur);
     .cover{
         position: relative;
         width: 100%;
@@ -127,6 +131,7 @@ body{
         border: var(--border1);
         padding: 10px 3px;
         border-radius: var(--border-radius-30);
+        backdrop-filter: var(--body-blur);
         /* @media (max-width: 500px) {
             &{padding: 0 5px;}
         } */
