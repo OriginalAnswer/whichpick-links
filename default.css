@@ -33,9 +33,10 @@ a, button{
     border: 0;
     outline: none;
     transition: transform .3s;
+    color: inherit;
     &:hover{
         cursor: pointer;
-        transform: scale(1.25);
+        transform: scale(1.2);
     }
     &:active{
         transform: scale(.98);
