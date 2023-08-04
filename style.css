@@ -103,13 +103,6 @@ body{
     display: flex;
     justify-content: center;
     overflow: hidden;
-    & .container{
-        width: 100%;
-        max-width: 450px;
-        @media (max-width: 500px) {
-            &{max-width: 100%;}
-        }
-    }
 }
 .container{
     position: relative;
@@ -118,7 +111,12 @@ body{
     background-size: cover;
     backdrop-filter: var(--body-blur);
     -webkit-backdrop-filter: var(--body-blur);
-
+    
+    width: 100%;
+    max-width: 450px;
+    @media (max-width: 500px) {
+        &{max-width: 100%;}
+    }
     .cover{
         position: relative;
         width: 100%;
@@ -132,7 +130,7 @@ body{
         position: relative;
         top:-38px;
         height: 100%;
-
+        
 
         background-color: var(--main-backgroundColor);
         border: var(--border1);
